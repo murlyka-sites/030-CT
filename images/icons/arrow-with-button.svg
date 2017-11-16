@@ -1,0 +1,12 @@
+<svg width="23" height="8" viewBox="0 0 23 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>arrow-with-button</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1048 -4391)">
+<g id="arrow-with-button">
+<use xlink:href="#path0_stroke" transform="translate(1048 4395)" fill="#275DAD"/>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 22.3536 0.353553C 22.5488 0.158291 22.5488 -0.158291 22.3536 -0.353553L 19.1716 -3.53553C 18.9763 -3.7308 18.6597 -3.7308 18.4645 -3.53553C 18.2692 -3.34027 18.2692 -3.02369 18.4645 -2.82843L 21.2929 0L 18.4645 2.82843C 18.2692 3.02369 18.2692 3.34027 18.4645 3.53553C 18.6597 3.7308 18.9763 3.7308 19.1716 3.53553L 22.3536 0.353553ZM 0 0.5L 22 0.5L 22 -0.5L 0 -0.5L 0 0.5Z"/>
+</defs>
+</svg>

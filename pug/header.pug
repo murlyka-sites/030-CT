@@ -1,0 +1,37 @@
+header.section-header
+	.container-fluid: .section-header__container
+		.section-header__column.section-header__column_logo
+			img(src="images/logo.png", alt="Логотип: ST Group", width="79", height="50")
+		nav.section-header__column.section-header__column_nav.nav-top
+			ul.nav-top__list
+				li.nav-top__item
+					a.nav-top__link(data-scroll href="#section-projects") Проекты
+				li.nav-top__item
+					a.nav-top__link(href="#") Цены
+				li.nav-top__item
+					a.nav-top__link(data-scroll href="#section-gallery") Галерея
+				li.nav-top__item
+					a.nav-top__link(data-scroll href="#section-location") Контакты
+				li.nav-top__item
+					a.nav-top__link(href="#") ищете участок?
+		.section-header__column.section-header__column_contact
+			a.section-header__phone.phone-number(href="tel:88129836237") 8 (812) 983-62-37
+			a.section-header__button.button.button_size_xs.button_theme_caribbean(href="#") Заказать звонок 
+		.section-header__column.section-header__column_burger
+			button.section-header__burger.menu-button(:class="{cross: menu.open }" @click="menu.open = !menu.open")
+				.bar
+				.bar
+				.bar
+
+	hidden(v-if="menu.open"): .container-fluid: nav.nav-top()
+		ul.nav-top__list
+			li.nav-top__item
+				a.nav-top__link(data-scroll href="#section-projects") Проекты
+			li.nav-top__item
+				a.nav-top__link(href="#") Цены
+			li.nav-top__item
+				a.nav-top__link(data-scroll href="#section-gallery") Галерея
+			li.nav-top__item
+				a.nav-top__link(data-scroll href="#section-location") Контакты
+			li.nav-top__item
+				a.nav-top__link(href="#") ищете участок?

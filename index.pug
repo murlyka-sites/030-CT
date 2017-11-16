@@ -1,0 +1,411 @@
+doctype html
+html(lang="ru")
+	head
+		title CT - Главная
+		include pug/head
+	body.page
+		.app
+			include pug/header
+			main.section-main: .container-fluid
+				h1.h1.section-main__title Строим дома из газобетона и кирпича с гарантией 10 лет
+					br
+					| в Санкт-Петербурге и Ленинградской области 
+				.section-main__container
+					.section-main__column.section-main__column_card
+						figure.card-main.section-main__card
+							.card-main__icon
+								img(src="images/icons/main-1.svg", alt="", width="50" heihgt="47")
+							.card-main__info
+								.card-main__title 18 000 м
+									sup 2
+								.card-main__desc частного жилья
+									br
+									| построили за 10 лет
+
+						figure.card-main.section-main__card
+							.card-main__icon
+								img(src="images/icons/main-2.svg", alt="", width="50" heihgt="42")
+							.card-main__info
+								.card-main__title Cтроим 
+								.card-main__desc от котлована 
+									br
+									| до чистовой отделки
+
+
+						figure.card-main.section-main__card
+							.card-main__icon
+								img(src="images/icons/main-3.svg", alt="", width="42" heihgt="49")
+							.card-main__info
+								.card-main__title Фиксированная цена
+								.card-main__desc в договоре
+					.section-main__column.section-main__column_bg
+					.section-main__column.section-main__column_form
+						.frame-order
+							.frame-order__title Рассчитайте дом 
+								b.fw_500 бесплатно
+								|  по вашему проекту
+							input.frame-order__field.field(placeholder="Ваше имя")
+							input.frame-order__field.field(placeholder="Ваш емейл")
+							button.frame-order__button.button.button_size_md.button_theme_caribbean Рассчитать
+			.section-edge
+				.section-edge-mainstream.section-edge__mainstream: .container-fluid: .section-edge-mainstream__container
+					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="0")
+						header.card-edge__header
+							.card-edge__number 1
+							.card-edge__icon: img(src="images/icons/edge-1.svg" width="35" height="35")
+						figcaption
+							.card-edge__title Оставляете заявку
+							.card-edge__desc Вы оставляете заявку на сайте или звоните нам по телефону
+
+					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="250")
+						header.card-edge__header
+							.card-edge__number 2
+							.card-edge__icon: img(src="images/icons/edge-2.svg" width="46" height="60")
+						figcaption
+							.card-edge__title Обсуждение проекта
+							.card-edge__desc Обсуждение проекта дома&nbsp;(составление коммперческого предложения)
+
+
+					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="500")
+						header.card-edge__header
+							.card-edge__number 3
+							.card-edge__icon: img(src="images/icons/edge-3.svg" width="59" height="60")
+						figcaption
+							.card-edge__title Согласование стоимости
+							.card-edge__desc 
+
+
+					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="750")
+						header.card-edge__header
+							.card-edge__number 4
+							.card-edge__icon: img(src="images/icons/edge-4.svg" width="60" height="43")
+						figcaption
+							.card-edge__title Осмотр участка
+							.card-edge__desc Предварительный осмотр участка специалистами, замеры
+
+
+					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="1000")
+						header.card-edge__header
+							.card-edge__number 5
+							.card-edge__icon: img(src="images/icons/edge-5.svg" width="53" height="60")
+						figcaption
+							.card-edge__title Смета и договор
+							.card-edge__desc Составление сметы и заключение договора
+
+
+					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="1250")
+						header.card-edge__header
+							.card-edge__number 6
+							.card-edge__icon: img(src="images/icons/edge-6.svg" width="50" height="50")
+						figcaption
+							.card-edge__title Начало работ
+							.card-edge__desc Начало строительных работ и их поэтапное выполнение
+
+				.section-edge-circle.section-edge__circle: .container-fluid
+					.section-edge-circle__container: .section-edge-circle__inner
+						figure.section-edge-circle__card.card-edge(data-aos="fade-right" data-aos-delay="0")
+							header.card-edge__header
+								.card-edge__number 7
+								.card-edge__icon: img(src="images/icons/edge-7.svg" width="80" height="70")
+							figcaption
+								.card-edge__title Сдача  объекта
+								.card-edge__desc Сдача строительного объекта заказчику
+
+			.section-divarication: .container-fluid
+				h2.h2.section-divarication__title Газобетон или кирпич?
+				.row: .section-divarication__container
+					.section-divarication__column(data-aos="fade-right")
+						figure.card-divarication.section-divarication__card
+							img.card-divarication__image(src="images/divarication-1.jpg", width="575" height="266")
+							.card-divarication__blur: img.card-divarication__image.card-divarication__image-blur(src="images/divarication-1.jpg", width="575" height="266")
+							figcaption.card-divarication__caption: .card-divarication__inner
+								.card-divarication__title Кирпич
+								.card-divarication__desc Газобетон - это исскуственный камень, который пользуется спросом. Поризованный кирпич изготавливают и чистого природного материала.
+								.card-divarication__price цена от 1.5 млн. рублей
+								a.button.button_theme_white.button_size_sm.card-divarication__button(href="#") смотреть
+					.section-divarication__column(data-aos="fade-left")
+						figure.card-divarication.section-divarication__card
+							img.card-divarication__image(src="images/divarication-2.jpg", width="575" height="266")
+							.card-divarication__blur: img.card-divarication__image.card-divarication__image-blur(src="images/divarication-2.jpg", width="575" height="266")
+							figcaption.card-divarication__caption: .card-divarication__inner
+								.card-divarication__title Газебетон
+								.card-divarication__desc Газобетон - это исскуственный камень, который пользуется спросом. Поризованный кирпич изготавливают и чистого природного материала.
+								.card-divarication__price цена от 1.5 млн. рублей
+								a.button.button_theme_white.button_size_sm.card-divarication__button(href="#") смотреть
+			.section-projects#section-projects: .container-fluid
+				h2.h2.section-projects__title Проекты
+				.row: .section-projects__container
+					.section-projects__column(data-aos="zoom-in" data-aos-delay="250")
+						.section-projects__card.card-project
+							img.card-project__pr(src="images/project-1.jpg" width="375" height="266")
+							figcaption.card-project__caption
+								.card-project__title Проект 36-43
+								.card-project__chars
+									.card-project__char
+										span.card-project__char-key Площадь:
+										| 
+										span.card-project__char-value 156 м
+											sup 2
+									.card-project__char
+										span.card-project__char-key Размеры:
+										| 
+										span.card-project__char-value 13,9х12,34 м
+									.card-project__char.card-project__char_price
+										span.card-project__char-key.card-project__char-key_price цена:
+										| 
+										span.card-project__char-value.card-project__char-value_price 3 535 000 ₽
+								a.button.button_theme_caribbean.button_size_md.card-project__button(href="#") Подробнее
+
+					.section-projects__column(data-aos="zoom-in" data-aos-delay="500")
+						.section-projects__card.card-project
+							img.card-project__pr(src="images/project-2.jpg" width="375" height="266")
+							figcaption.card-project__caption
+								.card-project__title Проект 56-01
+								.card-project__chars
+									.card-project__char
+										span.card-project__char-key Площадь:
+										| 
+										span.card-project__char-value 120 м
+											sup 2
+									.card-project__char
+										span.card-project__char-key Размеры:
+										| 
+										span.card-project__char-value 13,26х15,66 м
+									.card-project__char.card-project__char_price
+										span.card-project__char-key.card-project__char-key_price цена:
+										| 
+										span.card-project__char-value.card-project__char-value_price 3 373 000 ₽
+								a.button.button_theme_caribbean.button_size_md.card-project__button(href="#") Подробнее
+								
+					.section-projects__column(data-aos="zoom-in" data-aos-delay="750")
+						.section-projects__card.card-project
+							img.card-project__pr(src="images/project-3.jpg" width="375" height="266")
+							figcaption.card-project__caption
+								.card-project__title Проект 56-03
+								.card-project__chars
+									.card-project__char
+										span.card-project__char-key Площадь:
+										span.card-project__char-value 133,1 м
+											sup 2
+									.card-project__char
+										span.card-project__char-key Размеры:
+										span.card-project__char-value 11,6х10,3 м
+									.card-project__char.card-project__char_price
+										span.card-project__char-key.card-project__char-key_price цена:
+										| 
+										span.card-project__char-value.card-project__char-value_price 3 535 000 ₽
+								a.button.button_theme_caribbean.button_size_md.card-project__button(href="#") Подробнее
+				.button.button_size_lg.button_theme_bordered-azure.section-projects__button смотреть все
+			.section-action: .container-fluid
+				h2.h2.section-action__title Акции
+				.section-action__slider: swiper-wrapper
+					each i in [1,2,3,4,5]
+						.swiper-slide: figure.card-action
+							.card-action__column.card-action__column_pr: img.card-action__pr(src="images/action.jpg", alt="" width="500" height="280")
+							figcaption.card-action__column.card-action__column_caption
+								.card-action__title Красивая входная дверь в подарок
+								.card-action__desc Входные двери – это тот элемент жилья, из которого формируется первое впечатление о доме. Двери оказывают большое влияние на восприятие интерьера, поэтому к их выбору следует подходить со всей ответственностью. Двери должны не только нравиться по внешнему виду, но и быть надежными.
+			.section-planning: .container-fluid
+				h2.h2.section-planning__title Проектирование
+				.row: .section-planning__container
+					.section-planning__column(data-aos="fade-right")
+						figure.card-planning.section-planning__card
+							img.card-planning__pr(src="images/planning-1.jpg" width="500" heihgt="280")
+							figcaption.card-planning__caption
+								.card-planning__title Индивидуальные 
+									br
+									| проекты
+								.card-planning__desc Хотите чтобы Ваш дом был индивидуален и полностью удовлетворял Вашим запросам?
+								.card-planning__button.button.button_theme_bordered-azure.button_size_sm смотреть
+					.section-planning__column(data-aos="fade-left")
+						figure.card-planning.section-planning__card
+							img.card-planning__pr(src="images/planning-2.jpg" width="500" heihgt="280")
+							figcaption.card-planning__caption
+								.card-planning__title Готовые
+									br
+									| проекты
+								.card-planning__desc Хотите чтобы Ваш дом был индивидуален и полностью удовлетворял Вашим запросам?
+								.card-planning__button.button.button_theme_bordered-azure.button_size_sm смотреть
+				
+				.section-planning-order
+					h2.h2.section-planning-order__title Сформировать собственный проект
+					.section-planning-order__container
+						.section-planning-order__column.section-planning-order__column_4
+							.form-group
+								label.form-group__label Желаемая площадь:							
+								input.form-group__field.field.field_size_md.field_bordered
+
+						.section-planning-order__column.section-planning-order__column_4
+							.form-group
+								label.form-group__label Желаемая площадь:							
+								input.form-group__field.field.field_size_md.field_bordered
+									
+						.section-planning-order__column.section-planning-order__column_4
+							.form-group
+								label.form-group__label Желаемая площадь:							
+								input.form-group__field.field.field_size_md.field_bordered
+									
+						.section-planning-order__column.section-planning-order__column_4
+							.form-group
+								label.form-group__label Желаемая площадь:							
+								input.form-group__field.field.field_size_md.field_bordered
+									
+						.section-planning-order__column.section-planning-order__column_3
+							.form-group
+								label.form-group__label Желаемая площадь:							
+								input.form-group__field.field.field_size_md.field_bordered
+									
+						.section-planning-order__column.section-planning-order__column_3
+							.form-group
+								label.form-group__label Желаемая площадь:							
+								input.form-group__field.field.field_size_md.field_bordered
+									
+						.section-planning-order__column.section-planning-order__column_3
+							.form-group
+								label.form-group__label Желаемая площадь:							
+								input.form-group__field.field.field_size_md.field_bordered
+					button.section-planning-order__button.button.button_theme_caribbean.button_size_md Рассчитать
+			.section-offer: .container-fluid
+				.section-offer__container
+					.section-offer__column.section-offer__column_pr
+						img.section-offer__pr(src="images/offer.png", alt="" width="256" height="300")
+					.section-offer__column.section-offer__column_desc
+						.section-offer__desc Оставьте заявку
+							br
+							| на индивидуальную 
+							br
+							| консультацию нашего 
+							br
+							| главного инженера
+					.section-offer__column.section-offer__column_form
+						.frame-order
+							.frame-order__title Рассчитайте дом 
+								b.fw_500 бесплатно
+								|  по вашему проекту
+							input.frame-order__field.field(placeholder="Ваше имя")
+							input.frame-order__field.field(placeholder="Ваш емейл")
+							button.frame-order__button.button.button_size_md.button_theme_caribbean Рассчитать
+			.section-about: .container-fluid
+				h2.h2.section-about__title О нас
+				.section-about__container
+					.section-about__column.section-about__column_pr
+						img.section-about__pr(src="images/about.jpg" width="375" height="375")
+					.section-about__column.section-about__column_desc
+						p.p Спасибо за проявленный Вами интерес к нашей компании.
+						p.p Могу Вам гарантировать, что сотрудничество с нами оставит у Вас только положительные эмоции.
+						p.p Для этого в нашей компании трудится высококвалифицированный штат сотрудников, состоящий из профессиональных управленцев, архитекторов, конструкторов, дизайнеров, инженеров, профессиональных строителей и отделочников.
+						p.p Могу Вам гарантировать, что сотрудничество с нами оставит у Вас только положительные эмоции.
+						a.button.button_theme_bordered-azure.button_size_lg Подробнее об организации
+							svg.button__arrow.svg(width="23" height="8"): use(xlink:href="images/sprite.svg#arrow-with-button")
+							//- img(src="images/icons/arrow-with-button.svg", alt="" width="23" height="8")
+
+			.section-gallery#section-gallery: .container-fluid
+				h2.h2.section-gallery__title Галерея
+				.row: .section-gallery__container
+					.section-gallery__column(data-aos="zoom-in" data-aos-delay="0")
+						figure.card-gallery.section-gallery__card
+							img.card-gallery__pr(src="images/gallery-1.jpg", alt="" width="375" height="300")
+							.card-gallery__blur
+								img.card-gallery__blur-pr(src="images/gallery-1.jpg", width="375" heihgt="300")
+							figcaption.card-gallery__caption: span Тосненский район, площадь 150 м
+								sup 2
+
+					.section-gallery__column(data-aos="zoom-in" data-aos-delay="250")
+						figure.card-gallery.section-gallery__card
+							img.card-gallery__pr(src="images/gallery-2.jpg", alt="" width="375" height="300")
+							.card-gallery__blur
+								img.card-gallery__blur-pr(src="images/gallery-2.jpg", width="375" heihgt="300")
+							figcaption.card-gallery__caption: span Тосненский район, площадь 150 м
+								sup 2
+					.section-gallery__column(data-aos="zoom-in" data-aos-delay="500")
+						figure.card-gallery.section-gallery__card
+							img.card-gallery__pr(src="images/gallery-3.jpg", alt="" width="375" height="300")
+							.card-gallery__blur
+								img.card-gallery__blur-pr(src="images/gallery-3.jpg", width="375" heihgt="300")
+							figcaption.card-gallery__caption: span Тосненский район, площадь 150 м
+								sup 2
+				a.button.button_theme_bordered-azure.button_size_lg Смотреть все
+
+			.section-calculator: .container-fluid
+				.section-calculator__container
+					.section-calculator__column.section-calculator__column_material
+						.section-calculator__tabs
+							.section-calculator__tab.active Газобетон
+							.section-calculator__tab-divider |
+							.section-calculator__tab Кирпич
+					.section-calculator__column.section-calculator__column_main
+						.section-calculator__row.section-calculator__row_options
+							.section-calculator__options
+								label.checkbox.section-calculator__option
+									input.checkbox__field(type="checkbox")
+									.checkbox__label Наружная отделка
+								label.checkbox.section-calculator__option
+									input.checkbox__field(type="checkbox" name="abs")
+									.checkbox__label Инженерия
+								label.checkbox.section-calculator__option
+									input.checkbox__field(type="checkbox" name="abs")
+									.checkbox__label Внутренняя отделка
+						.section-calculator__row.section-calculator__row_area: .section-calculator__area
+							.section-calculator__area-column.section-calculator__area-column_label Площадь
+							.section-calculator__area-column.section-calculator__area-column_range: input(is="vue-slider" width="100%" min="5" max="105" name="range" tooltip="hover" tooltip-dir="bottom" clickable="true" v-model.number="value" formatter="{value} m2" event-type="auto")
+							.section-calculator__area-column.section-calculator__area-column_field
+								input.field.section-calculator__area-field(min="0" max="105" type="number")
+								| м
+								sup 2
+
+					
+					//- (type="range" is="vue-slider" v-model="value" v-bind="options")
+			.section-reviews: .container-fluid
+				h2.h2.section-reviews__title Отзывы
+				.row: .section-reviews__container
+					.section-reviews__column(data-aos="zoom-in" data-aos-delay="250")
+						figure.card-reviews.section-reviews__card
+							header.card-reviews__header
+								img.card-reviews__pr(src="images/reviews-1.jpg" width="90" height="90")
+								.card-reviews__name Виталий 
+									br
+									| Ильин
+							figcaption.card-reviews__caption Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России
+					.section-reviews__column(data-aos="zoom-in" data-aos-delay="500")
+						figure.card-reviews.section-reviews__card
+							header.card-reviews__header
+								img.card-reviews__pr(src="images/reviews-2.jpg" width="90" height="90")
+								.card-reviews__name Михаил
+									br
+									| Герцин
+							figcaption.card-reviews__caption Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России
+					.section-reviews__column(data-aos="zoom-in" data-aos-delay="750")
+						figure.card-reviews.section-reviews__card
+							header.card-reviews__header
+								img.card-reviews__pr(src="images/reviews-1.jpg" width="90" height="90")
+								.card-reviews__name Виталий 
+									br
+									| Ильин
+							figcaption.card-reviews__caption Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России
+					.section-reviews__column(data-aos="zoom-in" data-aos-delay="1000")
+						figure.card-reviews.section-reviews__card
+							header.card-reviews__header
+								img.card-reviews__pr(src="images/reviews-2.jpg" width="90" height="90")
+								.card-reviews__name Михаил
+									br
+									| Герцин
+							figcaption.card-reviews__caption Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России
+				a.section-reviews__button.button.button_theme_bordered-azure.button_size_lg(href="#") смотреть все
+			.section-polygraphy: .container-fluid
+				.section-polygraphy__container
+					h2.h2.section-polygraphy__title Буклет СТ  Групп
+					a.button.button_size_lg.button_theme_bordered-white.section-polygraphy__button Буклет СТ  Групп
+			.section-location#section-location
+				.container-fluid: header.section-location__header
+					h2.h2.section-location__title Как нас найти: 
+						address.section-location__address Санкт Петербург, ул. Краснопутиловская, д. 69, БЦ «Цитадель» оф. 608
+				.section-location__map: div(style="background: gray; height: 300px")
+			
+			.bg-gainsboro
+				include pug/header
+				include pug/foo
+
+		//- svg
+			filter(id="blur")
+				feGaussianBlur(in="" stdDeviation="10")
+		include pug/script

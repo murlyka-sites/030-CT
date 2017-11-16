@@ -1,0 +1,47 @@
+.nav-top {
+	&__list {		
+		list-style-type none
+		padding 0 0 15px
+		margin 0 
+		font-weight 500 
+		font-size 12px
+		text-transform uppercase
+		
+		@media (min-width $sm) {
+			display flex
+			padding 0
+		}
+	}
+	
+	&__item {
+		@media (min-width $sm) {
+			margin-right 20px
+		}
+		
+		@media (min-width $md) {
+			margin-right 40px
+		}
+		
+		&:last-child {
+			margin-right 0 
+		}
+	}
+	
+	
+	
+	&__link {
+		display inline-block
+		color inherit
+		text-decoration none
+		padding 5px 
+		
+		@media (min-width $sm) {
+			
+			padding 0
+		}
+		
+		&:hover {
+			text-decoration underline
+		}
+	}
+}

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>CT - Главная</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css?1510831285021">
+  </head>
+  <body class="page">
+    <div class="app">
+      <header class="section-header">
+        <div class="container-fluid">
+          <div class="section-header__container">
+            <div class="section-header__column section-header__column_logo"><img src="images/logo.png" alt="Логотип: ST Group" width="79" height="50"></div>
+            <nav class="section-header__column section-header__column_nav nav-top">
+              <ul class="nav-top__list">
+                <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-projects">Проекты</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" href="#">Цены</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-gallery">Галерея</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-location">Контакты</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" href="#">ищете участок?</a></li>
+              </ul>
+            </nav>
+            <div class="section-header__column section-header__column_contact"><a class="section-header__phone phone-number" href="tel:88129836237">8 (812) 983-62-37</a><a class="section-header__button button button_size_xs button_theme_caribbean" href="#">Заказать звонок </a></div>
+            <div class="section-header__column section-header__column_burger">
+              <button class="section-header__burger menu-button" :class="{cross: menu.open }" @click="menu.open = !menu.open">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hidden v-if="menu.open">
+          <div class="container-fluid">
+            <nav class="nav-top">
+              <ul class="nav-top__list">
+                <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-projects">Проекты</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" href="#">Цены</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-gallery">Галерея</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-location">Контакты</a></li>
+                <li class="nav-top__item"><a class="nav-top__link" href="#">ищете участок?</a></li>
+              </ul>
+            </nav>
+          </div>
+        </hidden>
+      </header>
+      <main class="section-main">
+        <div class="container-fluid">
+          <h1 class="h1 section-main__title">Строим дома из газобетона и кирпича с гарантией 10 лет<br>в Санкт-Петербурге и Ленинградской области </h1>
+          <div class="section-main__container">
+            <div class="section-main__column section-main__column_card">
+              <figure class="card-main section-main__card">
+                <div class="card-main__icon"><img src="images/icons/main-1.svg" alt="" width="50" heihgt="47"></div>
+                <div class="card-main__info">
+                  <div class="card-main__title">18 000 м<sup>2</sup></div>
+                  <div class="card-main__desc">частного жилья<br>построили за 10 лет</div>
+                </div>
+              </figure>
+              <figure class="card-main section-main__card">
+                <div class="card-main__icon"><img src="images/icons/main-2.svg" alt="" width="50" heihgt="42"></div>
+                <div class="card-main__info">
+                  <div class="card-main__title">Cтроим </div>
+                  <div class="card-main__desc">от котлована <br>до чистовой отделки</div>
+                </div>
+              </figure>
+              <figure class="card-main section-main__card">
+                <div class="card-main__icon"><img src="images/icons/main-3.svg" alt="" width="42" heihgt="49"></div>
+                <div class="card-main__info">
+                  <div class="card-main__title">Фиксированная цена</div>
+                  <div class="card-main__desc">в договоре</div>
+                </div>
+              </figure>
+            </div>
+            <div class="section-main__column section-main__column_bg"></div>
+            <div class="section-main__column section-main__column_form">
+              <div class="frame-order">
+                <div class="frame-order__title">Рассчитайте дом <b class="fw_500">бесплатно</b> по вашему проекту</div>
+                <input class="frame-order__field field" placeholder="Ваше имя">
+                <input class="frame-order__field field" placeholder="Ваш емейл">
+                <button class="frame-order__button button button_size_md button_theme_caribbean">Рассчитать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="section-edge">
+        <div class="section-edge-mainstream section-edge__mainstream">
+          <div class="container-fluid">
+            <div class="section-edge-mainstream__container">
+              <figure class="section-edge-mainstream__card card-edge" data-aos="fade-right" data-aos-delay="0">
+                <header class="card-edge__header">
+                  <div class="card-edge__number">1</div>
+                  <div class="card-edge__icon"><img src="images/icons/edge-1.svg" width="35" height="35"></div>
+                </header>
+                <figcaption>
+                  <div class="card-edge__title">Оставляете заявку</div>
+                  <div class="card-edge__desc">Вы оставляете заявку на сайте или звоните нам по телефону</div>
+                </figcaption>
+              </figure>
+              <figure class="section-edge-mainstream__card card-edge" data-aos="fade-right" data-aos-delay="250">
+                <header class="card-edge__header">
+                  <div class="card-edge__number">2</div>
+                  <div class="card-edge__icon"><img src="images/icons/edge-2.svg" width="46" height="60"></div>
+                </header>
+                <figcaption>
+                  <div class="card-edge__title">Обсуждение проекта</div>
+                  <div class="card-edge__desc">Обсуждение проекта дома&nbsp;(составление коммперческого предложения)</div>
+                </figcaption>
+              </figure>
+              <figure class="section-edge-mainstream__card card-edge" data-aos="fade-right" data-aos-delay="500">
+                <header class="card-edge__header">
+                  <div class="card-edge__number">3</div>
+                  <div class="card-edge__icon"><img src="images/icons/edge-3.svg" width="59" height="60"></div>
+                </header>
+                <figcaption>
+                  <div class="card-edge__title">Согласование стоимости</div>
+                  <div class="card-edge__desc"> </div>
+                </figcaption>
+              </figure>
+              <figure class="section-edge-mainstream__card card-edge" data-aos="fade-right" data-aos-delay="750">
+                <header class="card-edge__header">
+                  <div class="card-edge__number">4</div>
+                  <div class="card-edge__icon"><img src="images/icons/edge-4.svg" width="60" height="43"></div>
+                </header>
+                <figcaption>
+                  <div class="card-edge__title">Осмотр участка</div>
+                  <div class="card-edge__desc">Предварительный осмотр участка специалистами, замеры</div>
+                </figcaption>
+              </figure>
+              <figure class="section-edge-mainstream__card card-edge" data-aos="fade-right" data-aos-delay="1000">
+                <header class="card-edge__header">
+                  <div class="card-edge__number">5</div>
+                  <div class="card-edge__icon"><img src="images/icons/edge-5.svg" width="53" height="60"></div>
+                </header>
+                <figcaption>
+                  <div class="card-edge__title">Смета и договор</div>
+                  <div class="card-edge__desc">Составление сметы и заключение договора</div>
+                </figcaption>
+              </figure>
+              <figure class="section-edge-mainstream__card card-edge" data-aos="fade-right" data-aos-delay="1250">
+                <header class="card-edge__header">
+                  <div class="card-edge__number">6</div>
+                  <div class="card-edge__icon"><img src="images/icons/edge-6.svg" width="50" height="50"></div>
+                </header>
+                <figcaption>
+                  <div class="card-edge__title">Начало работ</div>
+                  <div class="card-edge__desc">Начало строительных работ и их поэтапное выполнение</div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="section-edge-circle section-edge__circle">
+          <div class="container-fluid">
+            <div class="section-edge-circle__container">
+              <div class="section-edge-circle__inner">
+                <figure class="section-edge-circle__card card-edge" data-aos="fade-right" data-aos-delay="0">
+                  <header class="card-edge__header">
+                    <div class="card-edge__number">7</div>
+                    <div class="card-edge__icon"><img src="images/icons/edge-7.svg" width="80" height="70"></div>
+                  </header>
+                  <figcaption>
+                    <div class="card-edge__title">Сдача  объекта</div>
+                    <div class="card-edge__desc">Сдача строительного объекта заказчику</div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divarication">
+        <div class="container-fluid">
+          <h2 class="h2 section-divarication__title">Газобетон или кирпич?</h2>
+          <div class="row">
+            <div class="section-divarication__container">
+              <div class="section-divarication__column" data-aos="fade-right">
+                <figure class="card-divarication section-divarication__card"><img class="card-divarication__image" src="images/divarication-1.jpg" width="575" height="266">
+                  <div class="card-divarication__blur"><img class="card-divarication__image card-divarication__image-blur" src="images/divarication-1.jpg" width="575" height="266"></div>
+                  <figcaption class="card-divarication__caption">
+                    <div class="card-divarication__inner">
+                      <div class="card-divarication__title">Кирпич</div>
+                      <div class="card-divarication__desc">Газобетон - это исскуственный камень, который пользуется спросом. Поризованный кирпич изготавливают и чистого природного материала.</div>
+                      <div class="card-divarication__price">цена от 1.5 млн. рублей</div><a class="button button_theme_white button_size_sm card-divarication__button" href="#">смотреть</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="section-divarication__column" data-aos="fade-left">
+                <figure class="card-divarication section-divarication__card"><img class="card-divarication__image" src="images/divarication-2.jpg" width="575" height="266">
+                  <div class="card-divarication__blur"><img class="card-divarication__image card-divarication__image-blur" src="images/divarication-2.jpg" width="575" height="266"></div>
+                  <figcaption class="card-divarication__caption">
+                    <div class="card-divarication__inner">
+                      <div class="card-divarication__title">Газебетон</div>
+                      <div class="card-divarication__desc">Газобетон - это исскуственный камень, который пользуется спросом. Поризованный кирпич изготавливают и чистого природного материала.</div>
+                      <div class="card-divarication__price">цена от 1.5 млн. рублей</div><a class="button button_theme_white button_size_sm card-divarication__button" href="#">смотреть</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-projects" id="section-projects">
+        <div class="container-fluid">
+          <h2 class="h2 section-projects__title">Проекты</h2>
+          <div class="row">
+            <div class="section-projects__container">
+              <div class="section-projects__column" data-aos="zoom-in" data-aos-delay="250">
+                <div class="section-projects__card card-project"><img class="card-project__pr" src="images/project-1.jpg" width="375" height="266">
+                  <figcaption class="card-project__caption">
+                    <div class="card-project__title">Проект 36-43</div>
+                    <div class="card-project__chars">
+                      <div class="card-project__char"><span class="card-project__char-key">Площадь:</span> <span class="card-project__char-value">156 м<sup>2</sup></span></div>
+                      <div class="card-project__char"><span class="card-project__char-key">Размеры:</span> <span class="card-project__char-value">13,9х12,34 м</span></div>
+                      <div class="card-project__char card-project__char_price"><span class="card-project__char-key card-project__char-key_price">цена:</span> <span class="card-project__char-value card-project__char-value_price">3 535 000 ₽</span></div>
+                    </div><a class="button button_theme_caribbean button_size_md card-project__button" href="#">Подробнее</a>
+                  </figcaption>
+                </div>
+              </div>
+              <div class="section-projects__column" data-aos="zoom-in" data-aos-delay="500">
+                <div class="section-projects__card card-project"><img class="card-project__pr" src="images/project-2.jpg" width="375" height="266">
+                  <figcaption class="card-project__caption">
+                    <div class="card-project__title">Проект 56-01</div>
+                    <div class="card-project__chars">
+                      <div class="card-project__char"><span class="card-project__char-key">Площадь:</span> <span class="card-project__char-value">120 м<sup>2</sup></span></div>
+                      <div class="card-project__char"><span class="card-project__char-key">Размеры:</span> <span class="card-project__char-value">13,26х15,66 м</span></div>
+                      <div class="card-project__char card-project__char_price"><span class="card-project__char-key card-project__char-key_price">цена:</span> <span class="card-project__char-value card-project__char-value_price">3 373 000 ₽</span></div>
+                    </div><a class="button button_theme_caribbean button_size_md card-project__button" href="#">Подробнее</a>
+                  </figcaption>
+                </div>
+              </div>
+              <div class="section-projects__column" data-aos="zoom-in" data-aos-delay="750">
+                <div class="section-projects__card card-project"><img class="card-project__pr" src="images/project-3.jpg" width="375" height="266">
+                  <figcaption class="card-project__caption">
+                    <div class="card-project__title">Проект 56-03</div>
+                    <div class="card-project__chars">
+                      <div class="card-project__char"><span class="card-project__char-key">Площадь:</span><span class="card-project__char-value">133,1 м<sup>2</sup></span></div>
+                      <div class="card-project__char"><span class="card-project__char-key">Размеры:</span><span class="card-project__char-value">11,6х10,3 м</span></div>
+                      <div class="card-project__char card-project__char_price"><span class="card-project__char-key card-project__char-key_price">цена:</span> <span class="card-project__char-value card-project__char-value_price">3 535 000 ₽</span></div>
+                    </div><a class="button button_theme_caribbean button_size_md card-project__button" href="#">Подробнее</a>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button button_size_lg button_theme_bordered-azure section-projects__button">смотреть все</div>
+        </div>
+      </div>
+      <div class="section-action">
+        <div class="container-fluid">
+          <h2 class="h2 section-action__title">Акции</h2>
+          <div class="section-action__slider">
+            <swiper-wrapper>
+              <div class="swiper-slide">
+                <figure class="card-action">
+                  <div class="card-action__column card-action__column_pr"><img class="card-action__pr" src="images/action.jpg" alt="" width="500" height="280"></div>
+                  <figcaption class="card-action__column card-action__column_caption">
+                    <div class="card-action__title">Красивая входная дверь в подарок</div>
+                    <div class="card-action__desc">Входные двери – это тот элемент жилья, из которого формируется первое впечатление о доме. Двери оказывают большое влияние на восприятие интерьера, поэтому к их выбору следует подходить со всей ответственностью. Двери должны не только нравиться по внешнему виду, но и быть надежными.</div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="card-action">
+                  <div class="card-action__column card-action__column_pr"><img class="card-action__pr" src="images/action.jpg" alt="" width="500" height="280"></div>
+                  <figcaption class="card-action__column card-action__column_caption">
+                    <div class="card-action__title">Красивая входная дверь в подарок</div>
+                    <div class="card-action__desc">Входные двери – это тот элемент жилья, из которого формируется первое впечатление о доме. Двери оказывают большое влияние на восприятие интерьера, поэтому к их выбору следует подходить со всей ответственностью. Двери должны не только нравиться по внешнему виду, но и быть надежными.</div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="card-action">
+                  <div class="card-action__column card-action__column_pr"><img class="card-action__pr" src="images/action.jpg" alt="" width="500" height="280"></div>
+                  <figcaption class="card-action__column card-action__column_caption">
+                    <div class="card-action__title">Красивая входная дверь в подарок</div>
+                    <div class="card-action__desc">Входные двери – это тот элемент жилья, из которого формируется первое впечатление о доме. Двери оказывают большое влияние на восприятие интерьера, поэтому к их выбору следует подходить со всей ответственностью. Двери должны не только нравиться по внешнему виду, но и быть надежными.</div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="card-action">
+                  <div class="card-action__column card-action__column_pr"><img class="card-action__pr" src="images/action.jpg" alt="" width="500" height="280"></div>
+                  <figcaption class="card-action__column card-action__column_caption">
+                    <div class="card-action__title">Красивая входная дверь в подарок</div>
+                    <div class="card-action__desc">Входные двери – это тот элемент жилья, из которого формируется первое впечатление о доме. Двери оказывают большое влияние на восприятие интерьера, поэтому к их выбору следует подходить со всей ответственностью. Двери должны не только нравиться по внешнему виду, но и быть надежными.</div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="card-action">
+                  <div class="card-action__column card-action__column_pr"><img class="card-action__pr" src="images/action.jpg" alt="" width="500" height="280"></div>
+                  <figcaption class="card-action__column card-action__column_caption">
+                    <div class="card-action__title">Красивая входная дверь в подарок</div>
+                    <div class="card-action__desc">Входные двери – это тот элемент жилья, из которого формируется первое впечатление о доме. Двери оказывают большое влияние на восприятие интерьера, поэтому к их выбору следует подходить со всей ответственностью. Двери должны не только нравиться по внешнему виду, но и быть надежными.</div>
+                  </figcaption>
+                </figure>
+              </div>
+            </swiper-wrapper>
+          </div>
+        </div>
+      </div>
+      <div class="section-planning">
+        <div class="container-fluid">
+          <h2 class="h2 section-planning__title">Проектирование</h2>
+          <div class="row">
+            <div class="section-planning__container">
+              <div class="section-planning__column" data-aos="fade-right">
+                <figure class="card-planning section-planning__card"><img class="card-planning__pr" src="images/planning-1.jpg" width="500" heihgt="280">
+                  <figcaption class="card-planning__caption">
+                    <div class="card-planning__title">Индивидуальные <br>проекты</div>
+                    <div class="card-planning__desc">Хотите чтобы Ваш дом был индивидуален и полностью удовлетворял Вашим запросам?</div>
+                    <div class="card-planning__button button button_theme_bordered-azure button_size_sm">смотреть</div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="section-planning__column" data-aos="fade-left">
+                <figure class="card-planning section-planning__card"><img class="card-planning__pr" src="images/planning-2.jpg" width="500" heihgt="280">
+                  <figcaption class="card-planning__caption">
+                    <div class="card-planning__title">Готовые<br>проекты</div>
+                    <div class="card-planning__desc">Хотите чтобы Ваш дом был индивидуален и полностью удовлетворял Вашим запросам?</div>
+                    <div class="card-planning__button button button_theme_bordered-azure button_size_sm">смотреть</div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="section-planning-order">
+            <h2 class="h2 section-planning-order__title">Сформировать собственный проект</h2>
+            <div class="section-planning-order__container">
+              <div class="section-planning-order__column section-planning-order__column_4">
+                <div class="form-group">
+                  <label class="form-group__label">Желаемая площадь:							</label>
+                  <input class="form-group__field field field_size_md field_bordered">
+                </div>
+              </div>
+              <div class="section-planning-order__column section-planning-order__column_4">
+                <div class="form-group">
+                  <label class="form-group__label">Желаемая площадь:							</label>
+                  <input class="form-group__field field field_size_md field_bordered">
+                </div>
+              </div>
+              <div class="section-planning-order__column section-planning-order__column_4">
+                <div class="form-group">
+                  <label class="form-group__label">Желаемая площадь:							</label>
+                  <input class="form-group__field field field_size_md field_bordered">
+                </div>
+              </div>
+              <div class="section-planning-order__column section-planning-order__column_4">
+                <div class="form-group">
+                  <label class="form-group__label">Желаемая площадь:							</label>
+                  <input class="form-group__field field field_size_md field_bordered">
+                </div>
+              </div>
+              <div class="section-planning-order__column section-planning-order__column_3">
+                <div class="form-group">
+                  <label class="form-group__label">Желаемая площадь:							</label>
+                  <input class="form-group__field field field_size_md field_bordered">
+                </div>
+              </div>
+              <div class="section-planning-order__column section-planning-order__column_3">
+                <div class="form-group">
+                  <label class="form-group__label">Желаемая площадь:							</label>
+                  <input class="form-group__field field field_size_md field_bordered">
+                </div>
+              </div>
+              <div class="section-planning-order__column section-planning-order__column_3">
+                <div class="form-group">
+                  <label class="form-group__label">Желаемая площадь:							</label>
+                  <input class="form-group__field field field_size_md field_bordered">
+                </div>
+              </div>
+            </div>
+            <button class="section-planning-order__button button button_theme_caribbean button_size_md">Рассчитать</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-offer">
+        <div class="container-fluid">
+          <div class="section-offer__container">
+            <div class="section-offer__column section-offer__column_pr"><img class="section-offer__pr" src="images/offer.png" alt="" width="256" height="300"></div>
+            <div class="section-offer__column section-offer__column_desc">
+              <div class="section-offer__desc">Оставьте заявку<br>на индивидуальную <br>консультацию нашего <br>главного инженера</div>
+            </div>
+            <div class="section-offer__column section-offer__column_form">
+              <div class="frame-order">
+                <div class="frame-order__title">Рассчитайте дом <b class="fw_500">бесплатно</b> по вашему проекту</div>
+                <input class="frame-order__field field" placeholder="Ваше имя">
+                <input class="frame-order__field field" placeholder="Ваш емейл">
+                <button class="frame-order__button button button_size_md button_theme_caribbean">Рассчитать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-about">
+        <div class="container-fluid">
+          <h2 class="h2 section-about__title">О нас</h2>
+          <div class="section-about__container">
+            <div class="section-about__column section-about__column_pr"><img class="section-about__pr" src="images/about.jpg" width="375" height="375"></div>
+            <div class="section-about__column section-about__column_desc">
+              <p class="p">Спасибо за проявленный Вами интерес к нашей компании.</p>
+              <p class="p">Могу Вам гарантировать, что сотрудничество с нами оставит у Вас только положительные эмоции.</p>
+              <p class="p">Для этого в нашей компании трудится высококвалифицированный штат сотрудников, состоящий из профессиональных управленцев, архитекторов, конструкторов, дизайнеров, инженеров, профессиональных строителей и отделочников.</p>
+              <p class="p">Могу Вам гарантировать, что сотрудничество с нами оставит у Вас только положительные эмоции.</p><a class="button button_theme_bordered-azure button_size_lg">Подробнее об организации
+                <svg class="button__arrow svg" width="23" height="8">
+                  <use xlink:href="images/sprite.svg#arrow-with-button"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-gallery" id="section-gallery">
+        <div class="container-fluid">
+          <h2 class="h2 section-gallery__title">Галерея</h2>
+          <div class="row">
+            <div class="section-gallery__container">
+              <div class="section-gallery__column" data-aos="zoom-in" data-aos-delay="0">
+                <figure class="card-gallery section-gallery__card"><img class="card-gallery__pr" src="images/gallery-1.jpg" alt="" width="375" height="300">
+                  <div class="card-gallery__blur"><img class="card-gallery__blur-pr" src="images/gallery-1.jpg" width="375" heihgt="300"></div>
+                  <figcaption class="card-gallery__caption"><span>Тосненский район, площадь 150 м<sup>2</sup></span></figcaption>
+                </figure>
+              </div>
+              <div class="section-gallery__column" data-aos="zoom-in" data-aos-delay="250">
+                <figure class="card-gallery section-gallery__card"><img class="card-gallery__pr" src="images/gallery-2.jpg" alt="" width="375" height="300">
+                  <div class="card-gallery__blur"><img class="card-gallery__blur-pr" src="images/gallery-2.jpg" width="375" heihgt="300"></div>
+                  <figcaption class="card-gallery__caption"><span>Тосненский район, площадь 150 м<sup>2</sup></span></figcaption>
+                </figure>
+              </div>
+              <div class="section-gallery__column" data-aos="zoom-in" data-aos-delay="500">
+                <figure class="card-gallery section-gallery__card"><img class="card-gallery__pr" src="images/gallery-3.jpg" alt="" width="375" height="300">
+                  <div class="card-gallery__blur"><img class="card-gallery__blur-pr" src="images/gallery-3.jpg" width="375" heihgt="300"></div>
+                  <figcaption class="card-gallery__caption"><span>Тосненский район, площадь 150 м<sup>2</sup></span></figcaption>
+                </figure>
+              </div>
+            </div>
+          </div><a class="button button_theme_bordered-azure button_size_lg">Смотреть все</a>
+        </div>
+      </div>
+      <div class="section-calculator">
+        <div class="container-fluid">
+          <div class="section-calculator__container">
+            <div class="section-calculator__column section-calculator__column_material">
+              <div class="section-calculator__tabs">
+                <div class="section-calculator__tab active">Газобетон</div>
+                <div class="section-calculator__tab-divider">|</div>
+                <div class="section-calculator__tab">Кирпич</div>
+              </div>
+            </div>
+            <div class="section-calculator__column section-calculator__column_main">
+              <div class="section-calculator__row section-calculator__row_options">
+                <div class="section-calculator__options">
+                  <label class="checkbox section-calculator__option">
+                    <input class="checkbox__field" type="checkbox">
+                    <div class="checkbox__label">Наружная отделка</div>
+                  </label>
+                  <label class="checkbox section-calculator__option">
+                    <input class="checkbox__field" type="checkbox" name="abs">
+                    <div class="checkbox__label">Инженерия</div>
+                  </label>
+                  <label class="checkbox section-calculator__option">
+                    <input class="checkbox__field" type="checkbox" name="abs">
+                    <div class="checkbox__label">Внутренняя отделка</div>
+                  </label>
+                </div>
+              </div>
+              <div class="section-calculator__row section-calculator__row_area">
+                <div class="section-calculator__area">
+                  <div class="section-calculator__area-column section-calculator__area-column_label">Площадь</div>
+                  <div class="section-calculator__area-column section-calculator__area-column_range">
+                    <input is="vue-slider" width="100%" min="5" max="105" name="range" tooltip="hover" tooltip-dir="bottom" clickable="true" v-model.number="value" formatter="{value} m2" event-type="auto">
+                  </div>
+                  <div class="section-calculator__area-column section-calculator__area-column_field">
+                    <input class="field section-calculator__area-field" min="0" max="105" type="number">м<sup>2</sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-reviews">
+        <div class="container-fluid">
+          <h2 class="h2 section-reviews__title">Отзывы</h2>
+          <div class="row">
+            <div class="section-reviews__container">
+              <div class="section-reviews__column" data-aos="zoom-in" data-aos-delay="250">
+                <figure class="card-reviews section-reviews__card">
+                  <header class="card-reviews__header"><img class="card-reviews__pr" src="images/reviews-1.jpg" width="90" height="90">
+                    <div class="card-reviews__name">Виталий <br>Ильин</div>
+                  </header>
+                  <figcaption class="card-reviews__caption">Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России</figcaption>
+                </figure>
+              </div>
+              <div class="section-reviews__column" data-aos="zoom-in" data-aos-delay="500">
+                <figure class="card-reviews section-reviews__card">
+                  <header class="card-reviews__header"><img class="card-reviews__pr" src="images/reviews-2.jpg" width="90" height="90">
+                    <div class="card-reviews__name">Михаил<br>Герцин</div>
+                  </header>
+                  <figcaption class="card-reviews__caption">Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России</figcaption>
+                </figure>
+              </div>
+              <div class="section-reviews__column" data-aos="zoom-in" data-aos-delay="750">
+                <figure class="card-reviews section-reviews__card">
+                  <header class="card-reviews__header"><img class="card-reviews__pr" src="images/reviews-1.jpg" width="90" height="90">
+                    <div class="card-reviews__name">Виталий <br>Ильин</div>
+                  </header>
+                  <figcaption class="card-reviews__caption">Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России</figcaption>
+                </figure>
+              </div>
+              <div class="section-reviews__column" data-aos="zoom-in" data-aos-delay="1000">
+                <figure class="card-reviews section-reviews__card">
+                  <header class="card-reviews__header"><img class="card-reviews__pr" src="images/reviews-2.jpg" width="90" height="90">
+                    <div class="card-reviews__name">Михаил<br>Герцин</div>
+                  </header>
+                  <figcaption class="card-reviews__caption">Ведущий российский девелопер, занимающийся преимущественно строительством доступного жилья в сегменте «эконом». Группа ведет свою деятельность в Москве, Подмосковье и других регионах России</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div><a class="section-reviews__button button button_theme_bordered-azure button_size_lg" href="#">смотреть все</a>
+        </div>
+      </div>
+      <div class="section-polygraphy">
+        <div class="container-fluid">
+          <div class="section-polygraphy__container">
+            <h2 class="h2 section-polygraphy__title">Буклет СТ  Групп</h2><a class="button button_size_lg button_theme_bordered-white section-polygraphy__button">Буклет СТ  Групп</a>
+          </div>
+        </div>
+      </div>
+      <div class="section-location" id="section-location">
+        <div class="container-fluid">
+          <header class="section-location__header">
+            <h2 class="h2 section-location__title">Как нас найти: 
+              <address class="section-location__address">Санкт Петербург, ул. Краснопутиловская, д. 69, БЦ «Цитадель» оф. 608</address>
+            </h2>
+          </header>
+        </div>
+        <div class="section-location__map">
+          <div style="background: gray; height: 300px;"></div>
+        </div>
+      </div>
+      <div class="bg-gainsboro">
+        <header class="section-header">
+          <div class="container-fluid">
+            <div class="section-header__container">
+              <div class="section-header__column section-header__column_logo"><img src="images/logo.png" alt="Логотип: ST Group" width="79" height="50"></div>
+              <nav class="section-header__column section-header__column_nav nav-top">
+                <ul class="nav-top__list">
+                  <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-projects">Проекты</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" href="#">Цены</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-gallery">Галерея</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-location">Контакты</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" href="#">ищете участок?</a></li>
+                </ul>
+              </nav>
+              <div class="section-header__column section-header__column_contact"><a class="section-header__phone phone-number" href="tel:88129836237">8 (812) 983-62-37</a><a class="section-header__button button button_size_xs button_theme_caribbean" href="#">Заказать звонок </a></div>
+              <div class="section-header__column section-header__column_burger">
+                <button class="section-header__burger menu-button" :class="{cross: menu.open }" @click="menu.open = !menu.open">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hidden v-if="menu.open">
+            <div class="container-fluid">
+              <nav class="nav-top">
+                <ul class="nav-top__list">
+                  <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-projects">Проекты</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" href="#">Цены</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-gallery">Галерея</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" data-scroll href="#section-location">Контакты</a></li>
+                  <li class="nav-top__item"><a class="nav-top__link" href="#">ищете участок?</a></li>
+                </ul>
+              </nav>
+            </div>
+          </hidden>
+        </header>
+        <footer class="section-foo">
+          <div class="container-fluid"><a class="section-foo__email" href="mailto:info@domain.ru">info@domain.ru</a>
+            <address class="section-foo__address">Санкт Петербург, ул. Краснопутиловская, д. 69<br>БЦ «Цитадель» оф. 608</address>
+            <div class="section-foo__copy">ООО «СТ групп» © 2017</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script src="js/main.js?1510831285021"></script>
+  </body>
+</html>
