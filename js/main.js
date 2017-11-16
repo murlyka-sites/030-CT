@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			menu: {
 				open: false
 			},
+			
 			value: 5
 		}
 	});
