@@ -24,6 +24,31 @@ document.addEventListener('DOMContentLoaded', function() {
 	Vue.component('hidden', {
 		template: '<div><slot></slot></div>'
 	})
+
+	Vue.component('attach', {
+		template: '<div class="attach">' +
+			'<img src="images/icons/file.svg" width="17" height="16" class="attach__icon">' +
+			'<div class="attach__name">{{ value }}</div>' +
+			'<div class="attach__button" tabindex="0" @click.prevent="attachFile" @keyup.space.prevent="attachFile">Обзор</div>' +
+			'<input hidden type="file" @change="changeFile">' +
+			'</div>',
+		data: function() {
+			let noFile = "Файл не выбран"
+
+			return {
+				noFile: noFile,
+				value: noFile
+			};
+		},
+		methods: {
+			changeFile: function(e) {
+				this.value = (e.target.files.length) ? e.target.files[0].name : this.noFile;
+			},
+			attachFile: function(e) {
+				e.target.nextSibling.click();
+			}
+		}
+	})
 	
 	let vm = new Vue({
 		el: '.app',
@@ -34,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			menu: {
 				open: false
 			},
-			
+
 			value: 5
 		}
 	});
