@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				open: false
 			},
 
+			type: 50,
+			option: [],
 			area: 5
 		},
 		methods: {
@@ -70,7 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		},
 		computed: {
 			calcResult: function () {
-				let calc = String(this.area * 100)
+				let sumOption = this.option.reduce(function(sum, current) {
+					return sum + Number(current)
+				}, 0);
+				let calc = String(this.area * (sumOption + Number(this.type)))
+				
 				return calc.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
 			}
 		}

@@ -339,6 +339,8 @@ html(lang="ru")
 				.section-calculator__container
 					.section-calculator__column.section-calculator__column_material
 						.section-calculator__tabs
+							input(type="radio" name="axs" value="50" v-model="type" checked)
+							input(type="radio" name="axs" value="60" v-model="type")
 							.section-calculator__tab.active Газобетон
 							.section-calculator__tab-divider |
 							.section-calculator__tab Кирпич
@@ -346,13 +348,13 @@ html(lang="ru")
 						.section-calculator__row.section-calculator__row_options
 							.section-calculator__options
 								label.checkbox.section-calculator__option
-									input.checkbox__field(type="checkbox")
+									input.checkbox__field(type="checkbox" v-model="option" value="10")
 									.checkbox__label Наружная отделка
 								label.checkbox.section-calculator__option
-									input.checkbox__field(type="checkbox" name="abs")
+									input.checkbox__field(type="checkbox" name="abs" v-model="option" value="15")
 									.checkbox__label Инженерия
 								label.checkbox.section-calculator__option
-									input.checkbox__field(type="checkbox" name="abs")
+									input.checkbox__field(type="checkbox" name="abs" v-model="option" value="20")
 									.checkbox__label Внутренняя отделка
 						.section-calculator__row.section-calculator__row_area: .section-calculator__area
 							.section-calculator__area-column.section-calculator__area-column_label Площадь

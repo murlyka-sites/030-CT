@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;amp;subset=cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css?1511712276637">
+    <link rel="stylesheet" href="css/style.css?1511723094494">
   </head>
   <body class="page">
     <div class="app">
@@ -464,6 +464,8 @@
           <div class="section-calculator__container">
             <div class="section-calculator__column section-calculator__column_material">
               <div class="section-calculator__tabs">
+                <input type="radio" name="axs" value="50" v-model="type" checked>
+                <input type="radio" name="axs" value="60" v-model="type">
                 <div class="section-calculator__tab active">Газобетон</div>
                 <div class="section-calculator__tab-divider">|</div>
                 <div class="section-calculator__tab">Кирпич</div>
@@ -473,15 +475,15 @@
               <div class="section-calculator__row section-calculator__row_options">
                 <div class="section-calculator__options">
                   <label class="checkbox section-calculator__option">
-                    <input class="checkbox__field" type="checkbox">
+                    <input class="checkbox__field" type="checkbox" v-model="option" value="10">
                     <div class="checkbox__label">Наружная отделка</div>
                   </label>
                   <label class="checkbox section-calculator__option">
-                    <input class="checkbox__field" type="checkbox" name="abs">
+                    <input class="checkbox__field" type="checkbox" name="abs" v-model="option" value="15">
                     <div class="checkbox__label">Инженерия</div>
                   </label>
                   <label class="checkbox section-calculator__option">
-                    <input class="checkbox__field" type="checkbox" name="abs">
+                    <input class="checkbox__field" type="checkbox" name="abs" v-model="option" value="20">
                     <div class="checkbox__label">Внутренняя отделка</div>
                   </label>
                 </div>
@@ -612,6 +614,6 @@
     <script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
-    <script src="js/main.js?1511712276637"></script>
+    <script src="js/main.js?1511723094494"></script>
   </body>
 </html>
