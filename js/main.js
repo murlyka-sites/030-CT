@@ -60,7 +60,19 @@ document.addEventListener('DOMContentLoaded', function() {
 				open: false
 			},
 
-			value: 5
+			area: 5
+		},
+		methods: {
+			changeArea: function (e) {
+
+				this.area = Number(e.target.value || 0)
+			}
+		},
+		computed: {
+			calcResult: function () {
+				let calc = String(this.area * 100)
+				return calc.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
+			}
 		}
 	});
 

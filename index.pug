@@ -356,14 +356,15 @@ html(lang="ru")
 									.checkbox__label Внутренняя отделка
 						.section-calculator__row.section-calculator__row_area: .section-calculator__area
 							.section-calculator__area-column.section-calculator__area-column_label Площадь
-							.section-calculator__area-column.section-calculator__area-column_range: input(is="vue-slider" width="100%" min="5" max="105" name="range" tooltip="hover" tooltip-dir="bottom" clickable="true" v-model.number="value" formatter="{value} m2" event-type="auto")
+							.section-calculator__area-column.section-calculator__area-column_range: input(is="vue-slider" width="100%" min="5" max="105" name="range" tooltip="hover" tooltip-dir="bottom" clickable="true" v-model="area" formatter="{value} m2" event-type="auto")
 							.section-calculator__area-column.section-calculator__area-column_field
-								input.field.section-calculator__area-field(min="0" max="105" type="number")
+								input.field.section-calculator__area-field(min="5" max="105" type="number" :value="area" @change="changeArea")
 								| м
 								sup 2
-
+				a.section-calculator__button.button.button_theme_bordered-azure.button_size_lg(href="#") {{ calcResult }}
 					
 					//- (type="range" is="vue-slider" v-model="value" v-bind="options")
+				
 			.section-reviews: .container-fluid
 				h2.h2.section-reviews__title Отзывы
 				.row: .section-reviews__container
