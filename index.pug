@@ -339,31 +339,35 @@ html(lang="ru")
 				.section-calculator__container
 					.section-calculator__column.section-calculator__column_material
 						.section-calculator__tabs
-							input(type="radio" name="axs" value="50" v-model="type" checked)
-							input(type="radio" name="axs" value="60" v-model="type")
-							.section-calculator__tab.active Газобетон
+							
+							
+							label.section-calculator__tab(:class="{active: calc.type.name == 'Газобетон'}") Газобетон
+								input(hidden type="radio" name="type" :value="{name: 'Газобетон', value: 50}" v-model="calc.type")
 							.section-calculator__tab-divider |
-							.section-calculator__tab Кирпич
+							label.section-calculator__tab(:class="{active: calc.type.name == 'Кирпич'}") Кирпич
+								input(hidden type="radio" name="type" :value="{name: 'Кирпич', value: 60}" v-model="calc.type")
 					.section-calculator__column.section-calculator__column_main
 						.section-calculator__row.section-calculator__row_options
 							.section-calculator__options
 								label.checkbox.section-calculator__option
-									input.checkbox__field(type="checkbox" v-model="option" value="10")
+									input.checkbox__field(type="checkbox" name="option" v-model="calc.option" :value="{name: 'Наружная отделка', value: 10}" checked)
 									.checkbox__label Наружная отделка
 								label.checkbox.section-calculator__option
-									input.checkbox__field(type="checkbox" name="abs" v-model="option" value="15")
+									input.checkbox__field(type="checkbox" name="option" v-model="calc.option" :value="{name: 'Инженерия', value: 15}")
 									.checkbox__label Инженерия
 								label.checkbox.section-calculator__option
-									input.checkbox__field(type="checkbox" name="abs" v-model="option" value="20")
+									input.checkbox__field(type="checkbox" name="option" v-model="calc.option" :value="{name: 'Внутренняя отделка', value: 20}" checked)
 									.checkbox__label Внутренняя отделка
 						.section-calculator__row.section-calculator__row_area: .section-calculator__area
 							.section-calculator__area-column.section-calculator__area-column_label Площадь
-							.section-calculator__area-column.section-calculator__area-column_range: input(is="vue-slider" width="100%" min="5" max="105" name="range" tooltip="hover" tooltip-dir="bottom" clickable="true" v-model="area" formatter="{value} m2" event-type="auto")
+							.section-calculator__area-column.section-calculator__area-column_range: input(is="vue-slider" width="100%" min="100" max="1000" name="range" tooltip="always" tooltip-dir="bottom" clickable="true" v-model="calc.area" formatter="{value} m2" event-type="auto")
 							.section-calculator__area-column.section-calculator__area-column_field
-								input.field.section-calculator__area-field(min="5" max="105" type="number" :value="area" @change="changeArea")
+								input.field.section-calculator__area-field(min="5" max="105" type="number" :value="calc.area" @change="calcChangeArea")
+								//- 
 								| м
 								sup 2
-				a.section-calculator__button.button.button_theme_bordered-azure.button_size_lg(href="#") {{ calcResult }}
+				a.section-calculator__button.button.button_theme_bordered-azure.button_size_lg(href="#") 
+					| Заказать за {{ getCalcSum() }} Руб
 					
 					//- (type="range" is="vue-slider" v-model="value" v-bind="options")
 				

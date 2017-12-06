@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 document.addEventListener('DOMContentLoaded', function() {
 	Vue.component('swiper-wrapper', {
 	  template: '<div><div class="swiper-container">' +
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	Vue.component('hidden', {
 		template: '<div><slot></slot></div>'
-	})
+	});
 
 	Vue.component('attach', {
 		template: '<div class="attach">' +
@@ -33,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			'<input hidden type="file" @change="changeFile">' +
 			'</div>',
 		data: function() {
-			let noFile = "Файл не выбран"
+
+			let noFile = "Файл не выбран";
 
 			return {
 				noFile: noFile,
@@ -48,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				e.target.nextSibling.click();
 			}
 		}
-	})
+	});
 	
 	let vm = new Vue({
 		el: '.app',
@@ -60,26 +62,51 @@ document.addEventListener('DOMContentLoaded', function() {
 				open: false
 			},
 
-			type: 50,
-			option: [],
-			area: 5
+			calc: {
+				type: {name: 'Газобетон', value: 50},
+				option: [],
+				area: 100
+			}
 		},
 		methods: {
-			changeArea: function (e) {
+			getSumValues(prop, cb = this.getValue) {
+				return prop.reduce( (sum, current) => sum + cb(current), 0);
+			},
+			
+			getValue(prop) {
+				return prop.value || 0
+			},
 
-				this.area = Number(e.target.value || 0)
+			calcChangeArea(e) {
+				this.calc.area = Number(e.target.value || 0);
+			},
+
+			getCalcSum() {
+				return (this.getValue(this.calc.type) + this.getSumValues(this.calc.option)) * this.calc.area
 			}
 		},
-		computed: {
-			calcResult: function () {
-				let sumOption = this.option.reduce(function(sum, current) {
-					return sum + Number(current)
-				}, 0);
-				let calc = String(this.area * (sumOption + Number(this.type)))
-				
-				return calc.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
-			}
-		}
+		// methods: {
+		// 	changeType: function (e) {
+		// 		this.type = Number(e.target.value);
+		// 	},
+
+		// 	changeArea: function (e) {
+		// 		this.area = Number(e.target.value || 0);
+		// 	}
+		// },
+		// // computed - вычисляемые свойства
+		// computed: {
+		// 	// вычислиет сумму всех отмеченных чекбоксов из группы option (Наружная отделка, инженерия и Внутреняя отделка)
+		// 	getOption: function () {
+		// 		return this.option.reduce(function(sum, current) {
+		// 			return sum + current.value;
+		// 		}, 0);
+		// 	},
+		// 	// Вычисляет конечный результат
+		// 	calcResult: function () {
+		// 		return this.area * (this.getOption + this.type);				
+		// 	}
+		// }
 	});
 
 	AOS.init({
@@ -87,5 +114,5 @@ document.addEventListener('DOMContentLoaded', function() {
 		once: true
 	});
 
-	var scroll = new SmoothScroll('a[data-scroll]')
+	var scroll = new SmoothScroll('a[data-scroll]');
 });
