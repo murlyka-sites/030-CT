@@ -23,7 +23,7 @@ header.section-header
 				.bar
 				.bar
 
-	hidden(v-if="menu.open"): .container-fluid: nav.nav-top()
+	div(v-cloak v-if="menu.open"): .container-fluid: nav.nav-top()
 		ul.nav-top__list
 			li.nav-top__item
 				a.nav-top__link(data-scroll href="#section-projects") Проекты

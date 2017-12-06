@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;amp;subset=cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css?1512527918654">
+    <link rel="stylesheet" href="css/style.css?1512540282435">
   </head>
   <body class="page">
     <div class="app">
@@ -38,7 +38,7 @@
             </div>
           </div>
         </div>
-        <hidden v-if="menu.open">
+        <div v-cloak v-if="menu.open">
           <div class="container-fluid">
             <nav class="nav-top">
               <ul class="nav-top__list">
@@ -50,7 +50,7 @@
               </ul>
             </nav>
           </div>
-        </hidden>
+        </div>
       </header>
       <main class="section-main">
         <div class="container-fluid">
@@ -590,7 +590,7 @@
               </div>
             </div>
           </div>
-          <hidden v-if="menu.open">
+          <div v-cloak v-if="menu.open">
             <div class="container-fluid">
               <nav class="nav-top">
                 <ul class="nav-top__list">
@@ -602,7 +602,7 @@
                 </ul>
               </nav>
             </div>
-          </hidden>
+          </div>
         </header>
         <footer class="section-foo">
           <div class="container-fluid"><a class="section-foo__email" href="mailto:info@domain.ru">info@domain.ru</a>
@@ -617,6 +617,6 @@
     <script src="https://nightcatsama.github.io/vue-slider-component/dist/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
-    <script src="js/main.js?1512527918654"></script>
+    <script src="js/main.js?1512540282435"></script>
   </body>
 </html>

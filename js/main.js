@@ -22,10 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	  }
 	});
 
-	Vue.component('hidden', {
-		template: '<div><slot></slot></div>'
-	});
-
 	Vue.component('attach', {
 		template: '<div class="attach">' +
 			'<img src="images/icons/file.svg" width="17" height="16" class="attach__icon">' +
@@ -84,29 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			getCalcSum() {
 				return (this.getValue(this.calc.type) + this.getSumValues(this.calc.option)) * this.calc.area
 			}
-		},
-		// methods: {
-		// 	changeType: function (e) {
-		// 		this.type = Number(e.target.value);
-		// 	},
-
-		// 	changeArea: function (e) {
-		// 		this.area = Number(e.target.value || 0);
-		// 	}
-		// },
-		// // computed - вычисляемые свойства
-		// computed: {
-		// 	// вычислиет сумму всех отмеченных чекбоксов из группы option (Наружная отделка, инженерия и Внутреняя отделка)
-		// 	getOption: function () {
-		// 		return this.option.reduce(function(sum, current) {
-		// 			return sum + current.value;
-		// 		}, 0);
-		// 	},
-		// 	// Вычисляет конечный результат
-		// 	calcResult: function () {
-		// 		return this.area * (this.getOption + this.type);				
-		// 	}
-		// }
+		}
 	});
 
 	AOS.init({
