@@ -5,76 +5,74 @@
 
 .section-header {
 	background white
-	 
+
 	&__container {
 		display flex
 		align-items center
 		padding 12px 0
 	}
-	
+
 	&__column {
 		&_logo {
-			
-			
 			@media (min-width $sm) {
 				margin-right 15px
 			}
-			
+
 			@media (min-width $md) {
-				margin-right 35px 
+				margin-right 35px
 			}
 		}
-		
+
 		&_nav {
 			display none
 			flex auto
-			
+
 			@media (min-width $sm) {
 				display block
 			}
 		}
-		
+
 		&_contact {
 			display none
-			text-align center
 			margin auto
-			max-width 200px 
-			
+			max-width 200px
+			text-align center
+
 			@media (min-width $xs) {
 				display block
 			}
-			
+
 			@media (min-width $sm) {
 				text-align right
 			}
-			
+
 			@media (min-width $md) {
 				display flex
 				align-items center
-				max-width none
 				margin-left auto
+				max-width none
 			}
 		}
-		
+
 		&_burger {
 			margin-left auto
-			
+
 			@media (min-width $xs) {
-				margin-left 0 
+				margin-left 0
 			}
-			
+
 			@media (min-width $sm) {
 				display none
 			}
 		}
 	}
-	
+
 	&__phone {
 		display inline-block
 		margin-bottom 5px
-		
+
 		@media (min-width $md) {
-			margin-right 25px 
+			margin-right 25px
 			margin-bottom 0
 		}
 	}
@@ -85,39 +83,39 @@
 	background lighten($color-azure, 30%) url(../images/bg-main.jpg) center / cover
 	color white
 	text-align center
-	
+
 	&__title {
-		margin-bottom 30px 
+		margin-bottom 30px
 	}
-	
+
 	&__container {
 		display flex
 		flex-direction column
 		align-items center
-		
+
 		@media (min-width 600px) {
 			flex-direction row
 			align-items stretch
 		}
 	}
-	
+
 	&__column {
 		&_card {
-			padding-left 10px 
-			padding-top 15px 
-			
+			padding-top 15px
+			padding-left 10px
+
 			@media (min-width 600px) {
 				margin-right auto
 			}
-			
+
 			@media (min-width $sm) {
 				margin-right 0
 			}
 		}
-		
+
 		&_bg {
 			display none
-						
+
 			@media (min-width $sm) {
 				display block
 				flex auto
@@ -125,12 +123,12 @@
 				background url(../images/bg-main-container.png) no-repeat center bottom / contain
 			}
 		}
-		
+
 		&_form {
-			padding-bottom 30px 
+			padding-bottom 30px
 		}
 	}
-	
+
 	&__card {
 		margin 0 0 25px
 	}
@@ -138,106 +136,102 @@
 
 .section-edge {
 	position relative
-	z-index 0 
+	z-index 0
 	background white url(../images/bg-edge.jpg) center bottom no-repeat
-	
+
 	&__mainstream {
-		z-index 2 
 		position relative
-		margin-bottom -90px 
-		
+		z-index 2
+		margin-bottom -90px
+
 		@media (min-width $xs) {
-			margin-bottom -195px 
+			margin-bottom -195px
 		}
 	}
-	
+
 	&__circle {
-		z-index 1 
-		position relative 
+		position relative
+		z-index 1
 	}
 }
 
 .section-edge-mainstream {
 	padding-bottom 110px
 	background url(../images/bg-edge-mainstream.svg) center bottom no-repeat
-	
+
 	&__container {
 		display flex
 		padding 35px 0 0
-		
+
 		@supports (flex-wrap wrap) {
 			display flex
 			flex-wrap wrap
 		}
 	}
-	
+
 	&__card {
-		display inline-block
 		position relative
-		width 100% 
+		display inline-block
 		margin 0 0 40px
-		
+		width 100%
+
 		@media (min-width $xs) {
 			flex 0 0 (100% / 2)
 			width (100% / 2)
 		}
-		
+
 		@media (min-width 600px) {
 			flex 0 0 (100% / 3)
 			width (100% / 3)
 		}
-		
+
 		@media (min-width $md) {
-			width (100% / 6)
 			flex 0 0 (100% / 6)
+			width (100% / 6)
 		}
-		
+
 		&::after {
-			display none
-			content ""
 			position absolute
-			top 45px 
-			right -25px 
+			top 45px
+			right -25px
+			display none
 			width 51px
-			height 8px 
+			height 8px
 			background url(../images/icons/edge-arrow-right.svg) center center / 100% 100%
+			content ""
 		}
-		
+
 		@media (min-width $xs) {
 			&:nth-child(odd)::after {
 				display block
 			}
 		}
-		
+
 		@media (min-width 600px) {
 			&:nth-child(odd)::after {
 				display none
 			}
-			
+
 			&:nth-child(3n-1)::after,
 			&:nth-child(3n-2)::after {
 				display block
 			}
 		}
-		
+
 		@media (min-width $md) {
 			&:nth-child(3n-1)::after,
 			&:nth-child(3n-2)::after {
 				display none
 			}
-			
+
 			&:nth-child(1n)::after {
 				display block
 			}
-			
+
 			&:last-child::after {
 				display none
 			}
 		}
-		
-		// &:last-child::after {
-		// 	display none
-		// }
 	}
 }
 
@@ -245,268 +239,265 @@
 	&__container {
 		position relative
 		box-sizing border-box
-		width 380px 
-		max-width 100%
 		margin auto
+		max-width 100%
+		width 380px
 		border-radius 50%
-		box-shadow 5px 10px 30px rgba(0, 0, 0, 0.15)
-		background white 
-		
-		
-		
+		background white
+		box-shadow 5px 10px 30px rgba(0, 0, 0, .15)
+
 		&::after {
-			content ""
 			display block
+			padding-bottom 100%
 			width 100%
 			height 0
-			padding-bottom 100% 
+			content ""
 		}
 	}
-	
+
 	&__inner {
-		box-sizing border-box
-		display flex
-		align-items center
-		justify-content center
 		position absolute
 		top 0
 		left 0
+		display flex
+		align-items center
+		justify-content center
+		box-sizing border-box
+		padding 15%
 		width 100%
 		height 100%
-		padding 15% 
-		
+
 		@media (min-width $xs) {
 			padding 150px 20% 0
 		}
-		
 
 		@media (min-width 600px) {
 			padding 150px 25% 0
 		}
 	}
-	
+
 	&__card {
 		margin 0
 	}
 }
 
 .section-divarication {
-	background #f8f8f8
-	text-align center
 	padding 70px 0 50px
-	border 1px solid #e8e8e8 
-	box-shadow inset 0px 5px 15px rgba(0, 0, 0, 0.1)
-		
+	border 1px solid $color-gainsborough-2
+	background $color-smoke-white
+	box-shadow inset 0 5px 15px rgba(0, 0, 0, .1)
+	text-align center
+
 	&__title {
 		margin 0 0 24px
 	}
-	
+
 	&__container {
 		display flex
-		flex-direction column 
-		
+		flex-direction column
+
 		@media (min-width $md) {
 			// display flex
 			flex-direction row
 		}
 	}
-	
+
 	&__column {
-		margin-bottom 20px 
-		box-sizing border-box
 		flex auto
+		box-sizing border-box
+		margin-bottom 20px
 		padding 0 13px 0 12px
 	}
-	
+
 	&__card {
-		margin 0
 		flex auto
+		margin 0
 	}
 }
 
 .section-projects {
-	background white 
-	padding 50px 0 50px
+	padding 50px 0
+	background white
 	text-align center
-	
+
 	&__title {
 		margin-bottom 27px
 	}
-	
+
 	&__container {
 		display flex
-		margin-bottom 40px 
+		margin-bottom 40px
 	}
-	
+
 	&__column {
 		flex auto
 		padding 0 12px 0 13px
-		
+
 		&:nth-child(2) {
 			display none
-			
+
 			@media (min-width 600px) {
 				display block
 			}
 		}
-		
+
 		&:nth-child(3) {
 			display none
-			
+
 			@media (min-width $sm) {
 				display block
 			}
 		}
 	}
-	
+
 	&__buttons {
-		margin-top  
+		margin-top
 	}
 }
 
 .section-action {
 	padding 55px 0 40px
-	text-align center
 	background white url(../images/bg-action.jpg) center center / cover
-	
+	text-align center
+
 	&__title {
-		margin-bottom 35px 
+		margin-bottom 35px
 	}
-	
+
 	&__slider {
 		position relative
-		margin 0 15px 
+		margin 0 15px
 	}
 }
 
 .section-planning {
 	padding 50px 0 0
-	text-align center
 	background white url(../images/bg-planning.jpg) center center / cover
-	
+	text-align center
+
 	&__title {
-		margin 0 0 40px 
+		margin 0 0 40px
 	}
-	
-	&__container {		
-		margin-bottom 40px 
-		
+
+	&__container {
+		margin-bottom 40px
+
 		@media (min-width $md) {
 			display flex
 		}
 	}
-	
+
 	&__column {
 		margin-bottom 20px
-		padding 0 12px 0 13px		
-		
+		padding 0 12px 0 13px
+
 		@media (min-width $md) {
 			margin-bottom 0
-			width 50%
 			max-width 50%
+			width 50%
 		}
 	}
-	
+
 	&__card {
 		margin 0
 	}
 }
 
 .section-planning-order {
-	padding-bottom 35px 
-	
+	padding-bottom 35px
+
 	&__title {
 		margin-bottom 30px
 	}
-	
+
 	&__container {
-		font-size 0 
-		
+		font-size 0
+
 		@supports (flex-wrap wrap) {
 			display flex
-			flex-wrap wrap 
-			font-size inherit 
+			flex-wrap wrap
+			font-size inherit
 		}
 	}
-	
+
 	&__column {
 		display inline-block
-		padding 0 12px 0 13px 
 		box-sizing border-box
+		padding 0 12px 0 13px
 		width 100%
-		
+
 		&_4 {
 			@media (min-width $xs) {
-				width 50% 
+				width 50%
 			}
-			
+
 			@media (min-width $md) {
-				width 25% 
+				width 25%
 			}
 		}
-		
-		&_3 {			
+
+		&_3 {
 			@media (min-width $md) {
-				width 33.333% 
+				width 33.333%
 			}
 		}
 	}
-	
+
 	&__button {
-		margin-top 15px 
+		margin-top 15px
 	}
 }
 
 .section-offer {
-	background #333333 url(../images/bg-offer.jpg) center center / cover
-	
+	background $color-signal-black url(../images/bg-offer.jpg) center center / cover
+
 	&__container {
 		display flex
 		flex-direction column
 		justify-content center
 		align-items center
 		padding 30px 0
-		
+
 		@media (min-width $sm) {
 			flex-direction row
 		}
 	}
-	
+
 	&__column {
 		&_pr {
-			display none
 			position relative
-			z-index 2  
+			z-index 2
+			display none
 			align-self flex-end
-			margin-bottom -30px 
-			margin-right -140px 
-			
+			margin-right -140px
+			margin-bottom -30px
+
 			@media (min-width $sm) {
 				display block
 			}
 		}
-		
+
 		&_desc {
 			display none
-			
+
 			@media (min-width $sm) {
 				display block
 			}
 		}
 	}
-	
+
 	&__desc {
 		padding 40px 40px 10px 85px
-		max-width 365px 
-		background rgba(51, 51, 51, 0.77);
+		max-width 365px
+		background rgba(51, 51, 51, .77)
 		color white
-		font-size 16px 
-		line-height 1.5 
+		font-size 16px
+		line-height 1.5
 	}
-	
+
 	&__pr {
 		display block
-	}	 
+	}
 }
 
 .section-about {
@@ -514,34 +505,34 @@
 	text-align center
 
 	&__title {
-		margin-bottom 25px 
+		margin-bottom 25px
 	}
-	
+
 	&__container {
-		
+
 		@media (min-width 600px) {
 			display flex
 			align-items flex-start
 		}
 	}
-	
+
 	&__column {
 		&_pr {
 			margin-right 20px
 			text-align center
-			
+
 			@media (min-width 600px) {
-				max-width 40% 
+				max-width 40%
 			}
 		}
-		
+
 		&_desc {
-			width 575px 
 			max-width 100%
+			width 575px
 			text-align left
 		}
 	}
-	
+
 	&__pr {
 		width 100%
 		height auto
@@ -549,93 +540,93 @@
 }
 
 .section-gallery {
-	background #f8f8f8
-	text-align center
 	padding 35px 0
-	
+	background $color-smoke-white
+	text-align center
+
 	&__title {
 		margin-bottom 30px
 	}
-	
+
 	&__container {
 		display flex
 		margin-bottom 30px
 	}
-	
+
 	&__column {
-		padding 0 12px 0 13px 
 		flex auto
-		
+		padding 0 12px 0 13px
+
 		&:nth-child(2) {
 			display none
-			
+
 			@media (min-width 600px) {
 				display block
 			}
 		}
-		
+
 		&:nth-child(3) {
 			display none
-			
+
 			@media (min-width $md) {
 				display block
 			}
 		}
 	}
-	
+
 	&__card {
 		margin 0
 	}
-	
+
 	&__button {
-	} 
+	}
 }
 
 .section-calculator {
+	padding-bottom 50px
 	text-align center
-	padding-bottom 50px 
-	
-	&__container {		
+
+	&__container {
 		padding 10px 0
-		
+
 		@media (min-width $md) {
 			display flex
 			padding 10px 0 50px
 		}
 	}
-	
+
 	&__column {
 		&_material {
 			margin 0 0 15px
-			
+
 			@media (min-width 600px) {
-				margin 0 0 40px 
+				margin 0 0 40px
 			}
-			
+
 			@media (min-width $md) {
-				margin-right 70px 	
+				margin-right 70px
 			}
 		}
-		
+
 		&_main {
 			flex auto
 		}
 	}
-	
+
 	&__options {
+		margin-bottom 15px
+		max-width 750px
 		width 100%
-		max-width 750px 
-		margin-bottom 15px 
-		
+
 		@media (min-width 600px) {
 			display flex
 			justify-content space-between
 			margin-bottom 40px
 		}
 	}
-	
+
 	&__option {
-		
+
 		&:last-child {
 			margin-right 0
 		}
@@ -644,137 +635,132 @@
 	&__tabs {
 		display flex
 		align-items center
-		min-height 25px 
 		margin 5px 0
-		font-family 'Roboto', sans-serif 
-		
-		
+		min-height 25px
+		font-family "Roboto", sans-serif
+
+
 	}
-	
+
 	&__tab {
 		position relative
 		color $color-azure
 		cursor pointer
-		
+
 		&::after {
-			content ""
 			position absolute
-			left 0
 			bottom 0
-			width 100%
+			left 0
 			display block
-			border-bottom 1px dashed $color-azure 
+			width 100%
+			border-bottom 1px dashed $color-azure
+			content ""
 		}
-		
+
 		&:hover::after,
 		&.active::after {
-			border-color transparent 
+			border-color transparent
 		}
-		
+
 		&.active {
 			color $color-shale
-			font-weight 500 
+			font-weight 500
 			cursor default
 		}
 	}
-	
+
 	&__tab-divider {
-		margin 0 15px 
+		margin 0 15px
 	}
-	
+
 	&__area {
-		
 		@media (min-width 600px) {
 			display flex
-			align-items center		
-			max-width 750px 
-		}
-		
-		&-column {
-			&_label {
-				margin-bottom 15px  
-				
-				@media (min-width 600px) {
-					margin-right 30px 
-					margin-bottom 0
-				}
-			}
-			
-			&_range {
-				flex auto
-				margin 0 0 15px
-				
-				@media (min-width 600px) {
-					margin 0
-				}
-			}
-			
-			&_field {
-				@media (min-width 600px) {
-					margin-left 30px 
-				}
-			}
-		}	
-		
-		&-field {
-			margin-right 20px
+			align-items center
+			max-width 750px
 		}
 	}
-	
 
+	&__area-column {
+		&_label {
+			margin-bottom 15px
+
+			@media (min-width 600px) {
+				margin-right 30px
+				margin-bottom 0
+			}
+		}
+
+		&_range {
+			flex auto
+			margin 0 0 15px
+
+			@media (min-width 600px) {
+				margin 0
+			}
+		}
+
+		&_field {
+			@media (min-width 600px) {
+				margin-left 30px
+			}
+		}
+	}
+
+	&__area-field {
+		margin-right 20px
+	}
 }
 
 .section-reviews {
 	padding 50px 0 35px
-	background #f8f8f8
+	background $color-smoke-white
 	text-align center
-	
+
 	&__title {
 		margin-bottom 30px
 	}
-	
+
 	&__container {
 		display flex
 		margin-bottom 30px
-		
-		@media (min-width $md) {}
 	}
-	
+
 	&__column {
-		padding 0 12px 0 13px 
-		
+		padding 0 12px 0 13px
+
 		&:nth-child(2) {
 			display none
-			
+
 			@media (min-width 600px) {
 				display block
 			}
 		}
-		
+
 		&:nth-child(3) {
 			display none
-			
+
 			@media (min-width $md) {
 				display block
 			}
 		}
-		
+
 		&:nth-child(4) {
 			display none
-			
+
 			@media (min-width $lg) {
 				display block
 			}
 		}
 	}
-	
+
 	&__card {
 		margin 0
 	}
 }
 
 .section-polygraphy {
-	background #333333 url(../images/bg-polygraphy.jpg) center center / cover fixed
+	background $color-signal-black url(../images/bg-polygraphy.jpg) center center / cover fixed
 	color white
 	text-align center
 
@@ -783,140 +769,140 @@
 		flex-direction column
 		justify-content center
 		align-items center
-		min-height 280px 
+		min-height 280px
 	}
-	
+
 	&__title {
 		margin-bottom 30px
 	}
 }
 
 .section-location {
-	
 	&__header {
-		padding 30px 0 30px
+		padding 30px 0
 	}
-	
+
 	&__title {
 		text-align center
 	}
-	
+
 	&__address {
 		display block
-		font-family 'Roboto', sans-serif
-		font-size 14px 
-		font-style normal
 		font-weight 400
-		
+		font-style normal
+		font-size 14px
+		font-family "Roboto", sans-serif
+
 		@media (min-width $sm) {
-			display inline  
+			display inline
 		}
 	}
 }
 
 .section-foo {
-	border-top 1px solid #E8E8E8
 	padding 30px 0 40px
+	border-top 1px solid $color-gainsborough-2
 	text-align center
-	font-family 'Roboto', sans-serif 
-	
+	font-family "Roboto", sans-serif
+
 	&__email {
 		display inline-block
-		margin-bottom 15px 
-		color #12A5FF
+		margin-bottom 15px
+		color $color-protective-blue
 		text-decoration none
 	}
-	
+
 	&__address {
-		margin-bottom 15px 
-		font-style normal 
-		font-size 12px 
-		line-height 1.5 
+		margin-bottom 15px
+		font-style normal
+		font-size 12px
+		line-height 1.5
 	}
-	
+
 	&__copy {
-		font-style normal 
-		font-size 12px 
-		line-height 1.5 }
+		font-style normal
+		font-size 12px
+		line-height 1.5
+	}
 }
 
 .card-main {
 	display flex
-	font-family 'Roboto', sans-serif 
 	text-align left
+	font-family "Roboto", sans-serif
 	line-height 1.5
-	
+
 	&__icon {
-		width 50px 
-		margin-right 20px 
+		margin-right 20px
+		width 50px
 		text-align center
 	}
-	
+
 	&__title {
-		margin-top -5px 
-		font-size 21px 
-		font-weight 700 
+		margin-top -5px
+		font-weight 700
+		font-size 21px
 	}
-	
+
 	&__desc {
-		font-size 16px 
+		font-size 16px
 	}
 }
 
 .card-edge {
 	box-sizing border-box
+	padding 0 5px
 	text-align center
-	padding 0 5px 
-	
+
 	&__header {
 		position relative
 		display flex
 		align-items center
 		justify-content center
 		padding 10px 0 0
-		min-height 80px 
+		min-height 80px
 	}
-	
+
 	&__number {
-		position absolute 
+		position absolute
 		top 0
 		left 50%
-		margin-left -12px 
 		display flex
 		align-items center
 		justify-content center
-		height 23px
+		margin-left -12px
 		width 23px
+		height 23px
 		border-radius 50%
 		background $color-azure
-		font-size 12px 
-		font-weight 500
 		color white
+		font-weight 500
+		font-size 12px
 	}
-	
+
 	&__title {
-		margin-bottom 5px 
-		font-family 'Open Sans', sans-serif 
-		font-weight 700 
-		font-size 16px 
-		line-height 1.7 
+		margin-bottom 5px
 		color $color-azure
+		font-weight 700
+		font-size 16px
+		font-family "Open Sans", sans-serif
+		line-height 1.7
 	}
-	
+
 	&__desc {
-		font-size 14px 
-		line-height 1.45 
+		font-size 14px
+		line-height 1.45
 	}
 }
 
 .card-divarication {
 	position relative
+	overflow hidden
 	height 100%
 	border-radius 15px
-	overflow hidden
-	box-shadow 5px 10px 30px rgba(13, 40, 58, 0.15)
-	
-	&__image {		
+	box-shadow 5px 10px 30px rgba(13, 40, 58, .15)
+
+	&__image {
 		@media (min-width $xs) {
 			position absolute
 			top 0
@@ -924,23 +910,22 @@
 			width 100%
 			height 100%
 			object-fit cover
-		}		
+		}
 	}
-	
+
 	&__image-blur {
 		display none
-		// clip-path polygon(50% 0, 100% 0, 100% 100%, 50% 100%)
-		
+
 		@media (min-width 480px) {
 			display block
 			clip-path polygon(30% 0, 100% 0, 100% 100%, 30% 100%)
 		}
-		
+
 		@media (min-width 600px) {
 			clip-path polygon(45% 0, 100% 0, 100% 100%, 45% 100%)
 		}
 	}
-	
+
 	&__blur {
 		position absolute
 		top 0
@@ -949,130 +934,130 @@
 		height 100%
 		filter blur(10px)
 	}
-	
+
 	&__caption {
 		position relative
-		z-index 2 
+		z-index 2
+		background linear-gradient(270deg, rgba(255, 255, 255, .5) -1.91%, rgba(255, 255, 255, 0) 77.57%)
+		color $color-sapphire-blue
 		text-align left
-		color #262F40
-		background linear-gradient(270deg, rgba(255, 255, 255, 0.5) -1.91%, rgba(255, 255, 255, 0) 77.57%)
-		line-height 1.5 
-		
+		line-height 1.5
+
 		@media (min-width 480px) {
-			min-height 266px
 			padding-left 35%
+			min-height 266px
 		}
-		
+
 		@media (min-width 600px) {
 			padding-left 50%
 		}
 	}
-	
+
 	&__inner {
-		padding 20px 
+		padding 20px
 	}
-	
+
 	&__title {
-		margin-bottom 10px 
-		font-weight 700 
+		margin-bottom 10px
+		font-weight 700
 		font-size 21px
 	}
-	
+
 	&__desc {
-		margin-bottom 10px 
-		font-size 14px 
+		margin-bottom 10px
+		font-size 14px
 	}
-	
+
 	&__price {
-		margin-bottom 15px 
-		font-size 18px 
-		font-weight 700 
+		margin-bottom 15px
+		font-weight 700
+		font-size 18px
 	}
 }
 
 .card-project {
-	font-family 'Open Sans', sans-serif 
+	overflow hidden
+	padding-bottom 25px
 	border-radius 10px
 	background white
-	box-shadow 5px 10px 30px rgba(13, 40, 58, 0.15)
-	overflow hidden
-	padding-bottom 25px  
-	
+	box-shadow 5px 10px 30px rgba(13, 40, 58, .15)
+	font-family "Open Sans", sans-serif
+
 	&__pr {
 		display block
+		margin 0 0 25px
 		width 100%
 		height auto
-		margin 0 0 25px 
 	}
-	
+
 	&__title {
-		margin-bottom 20px 
-		font-size 24px 
-		font-weight 600 
+		margin-bottom 20px
+		font-weight 600
+		font-size 24px
 	}
-	
+
 	&__chars {
-		margin-bottom 20px 
+		margin-bottom 20px
 	}
-	
+
 	&__char {
-		margin-bottom 5px 
-		font-weight 600 
-		font-size 16px 
-		
+		margin-bottom 5px
+		font-weight 600
+		font-size 16px
+
 		&-value {
 			color $color-azure
 		}
-		
+
 		&_price {
 			margin 10px 0
 		}
-		
+
 		&-key_price {
-			font-size 18px 
+			font-size 18px
 		}
-		
+
 		&-value_price {
-			font-size 24px 
+			font-size 24px
 		}
 	}
 }
 
 .card-action {
-	background white 
 	margin 0
+	background white
 	text-align left
 
 	@media (min-width $sm) {
 		display flex
 		align-items stretch
 	}
-	
+
 	&__column {
 		&_pr {
-			width 100%
 			flex none
-			
-			
+			width 100%
+
+
 			@media (min-width $sm) {
-				width 500px 
 				max-width 50%
+				width 500px
 			}
 		}
-		
-		&_caption {			
+
+		&_caption {
 			padding 10px 20px 20px
 			line-height 1.5
-			
+
 			@media (min-width $sm) {
 				display flex
 				flex-direction column
 				justify-content center
-				padding 10px 30px 
+				padding 10px 30px
 			}
-			
+
 			@media (min-width $lg) {
-				padding 10px 70px 
+				padding 10px 70px
 			}
 		}
 	}
@@ -1082,83 +1067,80 @@
 		width 100%
 		height 100%
 	}
-	
+
 	&__title {
-		margin-bottom 15px 
-		font-family 'Open Sans', sans-serif
-		font-size 24px 
-		font-weight 600 
+		margin-bottom 15px
 		color $color-azure
+		font-weight 600
+		font-size 24px
+		font-family "Open Sans", sans-serif
 	}
-	
+
 	&__desc {
-		font-family 'Roboto', sans-serif 
-		font-size 16px 
+		font-size 16px
+		font-family "Roboto", sans-serif
 	}
 }
 
 .card-planning {
-	
-	border-radius 10px
 	overflow hidden
-	box-shadow 5px 10px 30px rgba(13, 40, 58, 0.15);
 	border-radius 10px
-	background white 
-	
+	background white
+	box-shadow 5px 10px 30px rgba(13, 40, 58, .15)
+
 	@media (min-width $xs) {
 		display flex
 		align-items center
 	}
-	
+
 	&__pr {
+		max-height 280px
 		width 100%
 		height auto
-		max-height 280px
 		object-fit cover
-		 
+
 		@media (min-width $xs) {
-			width 275px
-			min-height 280px 
-			width 500px
+			min-height 280px
 			max-width 50%
 			max-height none
+			width 500px
 		}
 	}
-	
+
 	&__caption {
-		padding 10px 15px 
+		padding 10px 15px
 		text-align left
 		line-height 1.5
-		
+
 		@media (min-width $lg)  {
-			padding 10px 40px 
+			padding 10px 40px
 		}
 	}
-	
+
 	&__title {
-		margin-bottom 15px 
-		font-family 'Open Sans', sans-serif
-		font-weight 600 
-		font-size 21px 
+		margin-bottom 15px
+		font-weight 600
+		font-size 21px
+		font-family "Open Sans", sans-serif
 	}
-	
+
 	&__desc {
-		font-size 14px 
-		margin-bottom 20px 
+		margin-bottom 20px
+		font-size 14px
 	}
 }
 
 .card-gallery {
 	position relative
-	border-radius 10px 
 	overflow hidden
-	
+	border-radius 10px
+
 	&__pr {
 		display block
 		width 100%
 		height auto
 	}
-	
+
 	&__blur {
 		position absolute
 		bottom 0
@@ -1166,78 +1148,70 @@
 		z-index 4
 		width 100%
 		filter blur(10px)
-		// clip-path polygon(0 100%, 0 calc(100% - 80px), 100% calc(100% - 80px), 100% 100%)
 	}
-	
+
 	&__blur-pr {
 		display block
 		clip-path polygon(0 100%, 0 calc(100% - 80px), 100% calc(100% - 80px), 100% 100%)
-		// background linear-gradient(360deg, #4F4F4F -5.62%, rgba(255, 255, 255, 0) 100%)
 	}
-	
-	
+
+
 	&__caption {
-		box-sizing border-box
 		position absolute
 		bottom 0
 		left 0
-		z-index 5 
+		z-index 5
 		display flex
 		align-items center
 		justify-content center
-		height 80px
-		padding 10px 
+		box-sizing border-box
+		padding 10px
 		width 100%
+		height 80px
 		color white
-		font-family 'Roboto', sans-serif
-		font-size 16px 
+		font-size 16px
+		font-family "Roboto", sans-serif
 		line-height 1.5
-		align-items center
-		justify-content center
-		 
-			
+
 		&::before {
-			filter blur(10px)
-			content ""
 			position absolute
 			top 0
 			left 0
-			z-index 5 
+			z-index 5
 			width 100%
 			height 100%
+			filter blur(10px)
+			content ""
 		}
-		// filter blur(10px)
 	}
-	
-
 }
 
 .card-reviews {
 	box-sizing border-box
-	padding 25px 
+	padding 25px
 	border-radius 10px
-	box-shadow 5px 10px 30px rgba(13, 40, 58, 0.15)
+	box-shadow 5px 10px 30px rgba(13, 40, 58, .15)
 	text-align left
-	line-height 1.5 
-	
+	line-height 1.5
+
 	&__header {
 		display flex
 		align-items center
-		margin-bottom 20px 
+		margin-bottom 20px
 	}
-	
+
 	&__pr {
+		margin-right 20px
 		border-radius 50%
-		margin-right 20px 
 	}
-	
+
 	&__name {
-		font-family 'Roboto', sans-serif 
-		font-weight 500 
-		font-size 16px 
+		font-weight 500
+		font-size 16px
+		font-family "Roboto", sans-serif
 	}
-	
+
 	&__caption {
-		font-size 13px 
+		font-size 13px
 	}
 }

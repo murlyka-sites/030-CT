@@ -31,7 +31,6 @@ html(lang="ru")
 									br
 									| до чистовой отделки
 
-
 						figure.card-main.section-main__card
 							.card-main__icon
 								img(src="images/icons/main-3.svg", alt="", width="42" heihgt="49")
@@ -83,7 +82,6 @@ html(lang="ru")
 							.card-edge__title Осмотр участка
 							.card-edge__desc Предварительный осмотр участка специалистами, замеры
 
-
 					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="1000")
 						header.card-edge__header
 							.card-edge__number 5
@@ -91,7 +89,6 @@ html(lang="ru")
 						figcaption
 							.card-edge__title Смета и договор
 							.card-edge__desc Составление сметы и заключение договора
-
 
 					figure.section-edge-mainstream__card.card-edge(data-aos="fade-right" data-aos-delay="1250")
 						header.card-edge__header
@@ -110,7 +107,6 @@ html(lang="ru")
 							figcaption
 								.card-edge__title Сдача  объекта
 								.card-edge__desc Сдача строительного объекта заказчику
-
 			.section-divarication: .container-fluid
 				h2.h2.section-divarication__title Газобетон или кирпич?
 				.row: .section-divarication__container
@@ -306,8 +302,6 @@ html(lang="ru")
 						p.p Могу Вам гарантировать, что сотрудничество с нами оставит у Вас только положительные эмоции.
 						a.button.button_theme_bordered-azure.button_size_lg Подробнее об организации
 							svg.button__arrow.svg(width="23" height="8"): use(xlink:href="images/sprite.svg#arrow-with-button")
-							//- img(src="images/icons/arrow-with-button.svg", alt="" width="23" height="8")
-
 			.section-gallery#section-gallery: .container-fluid
 				h2.h2.section-gallery__title Галерея
 				.row: .section-gallery__container
@@ -334,13 +328,10 @@ html(lang="ru")
 							figcaption.card-gallery__caption: span Тосненский район, площадь 150 м
 								sup 2
 				a.button.button_theme_bordered-azure.button_size_lg Смотреть все
-
 			.section-calculator: .container-fluid
 				.section-calculator__container
 					.section-calculator__column.section-calculator__column_material
 						.section-calculator__tabs
-							
-							
 							label.section-calculator__tab(:class="{active: calc.type.name == 'Газобетон'}") Газобетон
 								input(hidden type="radio" name="type" :value="{name: 'Газобетон', value: 50}" v-model="calc.type")
 							.section-calculator__tab-divider |
@@ -360,16 +351,13 @@ html(lang="ru")
 									.checkbox__label Внутренняя отделка
 						.section-calculator__row.section-calculator__row_area: .section-calculator__area
 							.section-calculator__area-column.section-calculator__area-column_label Площадь
-							.section-calculator__area-column.section-calculator__area-column_range: input(is="vue-slider" width="100%" min="100" max="1000" name="range" tooltip="always" tooltip-dir="bottom" clickable="true" v-model="calc.area" formatter="{value} m2" event-type="auto")
+							.section-calculator__area-column.section-calculator__area-column_range: input(is="vue-slider" height="20" dot-size="34" width="100%" min="100" max="1000" name="range" tooltip="always" tooltip-dir="bottom" clickable="true" v-model="calc.area" formatter="{value} m2" event-type="auto")
 							.section-calculator__area-column.section-calculator__area-column_field
 								input.field.section-calculator__area-field(min="5" max="105" type="number" :value="calc.area" @change="calcChangeArea")
-								//- 
 								| м
 								sup 2
 				a.section-calculator__button.button.button_theme_bordered-azure.button_size_lg(href="#") 
 					| Заказать за {{ getCalcSum() }} Руб
-					
-					//- (type="range" is="vue-slider" v-model="value" v-bind="options")
 				
 			.section-reviews: .container-fluid
 				h2.h2.section-reviews__title Отзывы
@@ -420,8 +408,4 @@ html(lang="ru")
 			.bg-gainsboro
 				include pug/header
 				include pug/foo
-
-		//- svg
-			filter(id="blur")
-				feGaussianBlur(in="" stdDeviation="10")
 		include pug/script
